@@ -1,0 +1,386 @@
+*{
+   
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color:lightgray;
+    height:70px;
+    color: black;
+   
+    
+   
+}
+#logo{
+    font-size: 30px;
+    font-weight: 700;
+   color: black;
+   text-shadow: 0px 1px 1px  black;
+   margin-left: -70px;
+    
+    
+    margin-bottom:5px ;
+   }
+   #button{
+    color: black;
+    font-weight: bold;
+    background-color:darkolivegreen;
+   }
+   .navbar{
+    z-index:1000;
+   }
+   
+
+
+#logo span{
+    color:darkolivegreen;
+    text-shadow: 2px 2px 2px 2px black;
+}
+.navbar-toggler span{
+    color:black;
+}
+.navbar-nav{
+    margin-left: 70px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 550;
+    color:black;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    transition:0.5s ease;
+    text-transform: uppercase;
+}
+.nav-item .nav-link:hover{
+    background-color: blanchedalmond;
+}
+@media(max-width:991px){
+    .navbar-collapse{
+        background-color: blue;
+    }
+}
+.navbar-nav > li{
+    
+    padding-right:20px;
+  }
+  .home{
+    height:100vh;
+    width:100%;
+    background-image:url(./images/kerala-tourism.jpg) ;
+   background: content-box;
+
+}
+#im2{
+    width:50%;
+    height:530px;
+}
+#im1{
+    width:50%;
+    height:530px;
+}
+#im3{
+    width:50%;
+    height:530px;
+}
+.image4{
+    justify-content: center;
+}
+.carousel-item .carousel-caption h5{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: darkolivegreen;
+
+}
+.carousel-item .carousel-caption p{
+color:black;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+.carousel-inner.carousel-item img{
+    width:100%;
+    height:80%;
+}
+.home .content{
+    text-align: center;
+    padding-top: 80px;
+}
+.home .content h5{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    font-weight: 600;
+    font-size:60px ;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.changecontent::after{
+    content:' ';
+    color:indianred;
+    text-shadow: 0px 1px 1px black;
+    animation:changetext 15s infinite linear;
+}
+@keyframes changetext{
+    0%{ content:  "Hyderabad🌞";}
+    10%{content: "Kerala🌲";}
+    20%{content: "Sikkim🌧️🗻";}
+    30%{content: "Kolkata✈️";}
+    40%{content: "Pondichery🏖️🌊";}
+    50%{content: "Bali🏔️";}
+    60%{content: "Pune🌧️";}
+    70%{content: "Mumbai😎";}
+
+}
+.home .content a{
+    padding:10px;
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background-color: darkseagreen;
+}
+@media (max-width:850px){
+    .home {
+        background-position: 50%;
+    }
+    .home .content h1{
+        font-size: 38px;
+
+    }
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+.book{
+    background-color:lightgrey;
+    padding: 50px;
+}
+.main-text h1{
+    margin-top: -30px;
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: bold;
+}
+.main-text h1 span{
+    color: darkolivegreen;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.box .row{
+    margin-top: 10px;
+}
+.book form input{
+    padding:10px;
+    color:black;
+    border:none;
+    outline:none;
+    font-size: 15px;
+    border-radius:10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border:none;
+    border-radius: 10px;
+    resize:none;
+    box-shadow: 0px 5px 5px -6px black;
+    height:120px;
+}
+.book .submit{
+    width:100px;
+    font-size: 16px;
+    font-weight: bold;
+    background: darkolivegreen;
+    color:black;
+    margin-top:10px;
+    transition:0.5s;
+}
+.book .submit:hover{
+    width:170px;
+}
+@media(max-width:756px){
+    .book{
+        padding:0;
+
+    }
+    .main-text h1{
+        margin-top:20px;
+    }
+}
+.main-txt  h1{
+    text-align:center;
+    margin-top: 30px;
+    font-weight:700;
+    text-shadow:0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: darkolivegreen;
+}
+.packages{
+    background-color: lightgray;
+}
+.packages .card{
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0px 5px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+
+}
+.packages .card .card-body h3{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.checked{
+    color:darkolivegreen;
+}
+.packages .card .card-body a{
+    padding: 8px;
+    text-decoration: none;
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+   
+}
+.image1{
+    height:220px
+}
+.image2{
+    height:200px;
+}
+.services{
+    background-color: lightgrey;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow:  black 0px 4px 12px ;
+    border: none;
+    cursor: pointer;
+    
+}
+.services .card i{
+    font-size: 80px;
+    text-align:center ;
+    color: darkolivegreen;
+    margin-top: 20px;
+}
+.services  .card  .card-body h3{
+    font-weight: bold;
+   
+   
+
+}
+.services  .card  .card-body p{
+    font-weight: 400;
+   
+   
+
+}
+.services  .card  .card-body {
+    text-align: center;
+}
+.gallary{
+    margin-top:50px;
+    background-color: lightgray;
+
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: black 0px 4px 15px;
+    cursor:pointer;
+}
+.gallary .card img{
+    border-radius:10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    
+   transform: scale(1.1);
+}
+
+.about{
+    margin-top:50px;
+    background-color: lightgray;
+    
+}
+.about .card{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-size: 500;
+}
+#about-btn{
+    width:150px;
+    height:40px;
+    border:none;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-color: darkolivegreen;
+    letter-spacing: 2px;
+    font-weight: Bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width:170px;
+}
+#footer{
+    width:100%;
+    margin-top:150px;
+    text-align: center;
+    background-color: lightgray;
+    margin-top: 90px;
+    
+
+}
+#footer h1{
+    font-weight: bold;
+    padding-top: 30px;
+    text-shadow:0px 0px 1px 1px black;
+}
+#footer h1 span{
+    color:darkolivegreen
+}
+.social-links{
+    padding:10px;
+    border-radius: 5px;
+    font-size:20px;
+    background-color: darkolivegreen;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor:pointer;
+
+}
+.social-links i:hover{
+    background-color: red;
+}
+
+  
